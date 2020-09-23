@@ -5,6 +5,10 @@ public class FoodData {
     private String itemDescription;
     private String itemPrice;
     private String itemImage;
+    private String key;
+
+    public FoodData() {
+    }
 
     public FoodData(String itemName, String itemDescription, String itemPrice, String itemImage) {
         this.itemName = itemName;
@@ -28,4 +32,12 @@ public class FoodData {
     public String getItemImage() {
         return itemImage;
     }
+
+//    public String getKey() {
+//        return key;
+//    }
+//
+//    public void setKey(String key) {
+//        this.key = key;
+//    }
 }
