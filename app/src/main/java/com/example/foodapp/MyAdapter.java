@@ -49,6 +49,8 @@ public class MyAdapter extends RecyclerView.Adapter<FoodViewHolder>{
                 Intent intent = new Intent(mContext,DetailActivity.class);
                 intent.putExtra("Image",myFoodList.get(foodViewHolder.getAdapterPosition()).getItemImage());
                 intent.putExtra("Description",myFoodList.get(foodViewHolder.getAdapterPosition()).getItemDescription());
+                intent.putExtra("Price",myFoodList.get(foodViewHolder.getAdapterPosition()).getItemPrice());
+                intent.putExtra("Title",myFoodList.get(foodViewHolder.getAdapterPosition()).getItemName());
                 mContext.startActivity(intent);
             }
         });

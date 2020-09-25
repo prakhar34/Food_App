@@ -6,12 +6,28 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ScrollView>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:id="@+id/ivImage2"
-        android:src="@drawable/imag3"
+
         android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Title"
+        android:padding="20dp"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:id="@+id/txtTitle"
+        />
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,6 +38,26 @@
         android:textStyle="italic"
         android:id="@+id/txtDescription"
         />
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Price"
+        android:padding="20dp"
+        android:textSize="23dp"
+        android:textColor="#FF3D00"
+        android:textStyle="bold"
+        android:id="@+id/txtPrice"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="70dp"
+        android:textColor="#FFFFFF"
+        android:text="order now "
+        android:id="@+id/btnOrder"
+        android:background="@color/colorPrimary"
+        android:onClick="OrderNow"
+        tools:ignore="OnClick" />
 
 </LinearLayout>
